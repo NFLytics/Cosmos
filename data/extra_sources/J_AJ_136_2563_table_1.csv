@@ -1,0 +1,29 @@
+Ref,BibCode,Aut,Com
+B06,2006MNRAS.365.1220B,Begum et al.,
+B81,1981AJ.....86.1791B,Bosma,
+D00,2000A&AS..142..425D,Drozdovsky & Karachentsev,Cat. J/A+AS/142/425
+F01,2001ApJ...553...47F,Freedman et al.,
+H01,2001ApJ...556..773H,Hunter et al.,
+H98,1998ApJ...495L..47H,Hunter et al.,
+K02,2002A&A...383..125K,Karachentsev et al.,
+K03,2003PASP..115..928K,Kennicutt et al.,
+K04,2004AJ....127.2031K,Karachentsev et al.,Cat. J/AJ/127/2031
+K98,1998ApJ...498..541K,Kennicutt,
+L02,2002AJ....124.2490L,Leonard et al.,
+L06,...................,Lee,"2006, PhD thesis (Univ. of Arizona)"
+LEDA,...................,LEDA database,http://www.leda.univ-lyon.fr
+M01,2001ApJ...559..243M,Macri et al.,
+M05,2005AJ....130..524M,Muhle et al.,
+M06,...................,Moustakas,"2006, PhD thesis (Univ. of Arizona)"
+NED,...................,NED database,http://ned.ipac.caltech.edu
+O01,2001AJ....122.3070O,Ott et al.,
+O08,2008AJ....136.2761O,Oh et al.,
+P92,1992AJ....103.1841P,Puche et al.,
+S89,1989ApJ...347..875S,Skillman et al.,
+S94,1994ApJ...429..572S,Storchi-Bergmann et al.,
+T08,2008AJ....136.2872T,Tamburro et al.,
+T08,2008AJ....136.2720T,Trachternach et al.,
+T93,1993A&A...274..707T,Tilanus & Allen,
+Z94,1994ApJ...420...87Z,Zaritsky et al.,
+dB08,2008AJ....136.2648D,de Blok et al.,
+vflow,...................,,distances calculated from NED using Hubble flow distances (corrected for Virgo infall)

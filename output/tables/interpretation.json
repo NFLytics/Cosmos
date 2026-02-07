@@ -1,0 +1,18 @@
+{
+  "n_galaxies": 29,
+  "mean_ratio": 1.4009489762332206,
+  "std_ratio": 0.7677179090905284,
+  "sem_ratio": 0.14256163675314484,
+  "mean_z_score": 0.040268310673495095,
+  "combined_z": 0.2168514894816645,
+  "combined_p": 0.4141620418763281,
+  "n_galaxies_2sigma": 17,
+  "n_galaxies_1sigma": 18,
+  "t_stat_cdm": 2.812460528406327,
+  "p_value_cdm": 0.0024582028577732062,
+  "t_stat_sdh": 1.9707193508145722,
+  "p_value_sdh": 0.9756220070493072,
+  "winner": "INCONCLUSIVE",
+  "confidence": "LOW",
+  "success": true
+}

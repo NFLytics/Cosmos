@@ -1,0 +1,8 @@
+RADIAL-DEPENDENT RAR ANALYSIS - SUMMARY
+======================================================================
+
+Sample Size: 29 galaxies
+Mean Ratio: 1.4009 ± 0.7677
+Combined Significance: 0.22σ
+Verdict: INCONCLUSIVE
+Confidence: LOW

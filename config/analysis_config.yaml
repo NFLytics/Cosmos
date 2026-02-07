@@ -1,0 +1,46 @@
+# SPARC Radial-Dependent RAR Analysis Configuration
+
+# Data directories
+data:
+  sparc_dir: "data/raw_sparc"
+  processed_dir: "data/processed"
+  output_dir: "output"
+
+# Analysis parameters
+analysis:
+  n_radial_bins: 2  # Number of radial bins (2 = inner/outer)
+  a0_bounds: [1e-12, 1e-8]  # Bounds on MOND scale (m/s²)
+  
+  # Quality control thresholds
+  quality:
+    min_points: 8                    # Minimum rotation curve points
+    min_radial_range_kpc: 5.0        # Minimum radial span
+    min_inner_radius_kpc: 0.0        # Minimum inner radius
+    min_outer_radius_kpc: 10.0       # Minimum outer radius
+    max_velocity_error_fraction: 0.20  # Max relative error
+
+# Predictions (for hypothesis testing)
+predictions:
+  cdm:
+    ratio_mean: 1.00     # a0(inner) / a0(outer)
+    ratio_std: 0.05
+  
+  sdh_plus:
+    ratio_mean: 1.12     # Expected from RG running
+    ratio_std: 0.06
+
+# Plotting
+
+
+
+# Compute methodology (Nexus Platform optimization)
+
+compute:
+
+  use_gpu: true
+
+  onnx_model_path: "models/rar_model.onnx"
+
+  vram_threshold_gb: 7.8
+
+  num_threads: 6

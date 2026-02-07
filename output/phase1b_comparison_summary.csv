@@ -1,0 +1,4 @@
+Quality Level,Total Galaxies,Quality Galaxies,Spirals,Dwarfs,All: Ratio,All: Z-score,All: Verdict,Spirals: Ratio,Spirals: Z-score,Spirals: Verdict,Dwarfs: Ratio,Dwarfs: Z-score,Dwarfs: Verdict
+STRICT,173,61,52,9,0.862,-147.73σ,ΛCDM,0.778,-138.61σ,ΛCDM,1.323,-51.60σ,INCONCLUSIVE
+RELAXED,173,95,81,14,0.839,-130.65σ,ΛCDM,0.754,-124.32σ,ΛCDM,1.297,-41.60σ,INCONCLUSIVE
+MINIMAL,173,126,106,19,0.813,-133.96σ,ΛCDM,0.752,-122.58σ,ΛCDM,1.208,-41.69σ,INCONCLUSIVE
