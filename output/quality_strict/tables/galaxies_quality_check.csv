@@ -1,72 +1,176 @@
 Galaxy,Passes,Reason
-"NGC 1569,,2.0,,,,,,,,,,,,,,,,",False,NoData
-"Ho II,,3.4,,,,,,,,,,,,,,,,",False,NoData
-"M81 DwA,,3.6,,,,,,,,,,,,,,,,",False,NoData
-DDO,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-"Ho I,,3.8,,,,,,,,,,,,,,,,",False,NoData
-"NGC 3031,,3.6,,,,,,,,,,,,,,,,",False,NoData
-"NGC 3077,,3.8,,,,,,,,,,,,,,,,",False,NoData
-"M81 DwB,,5.3,,,,,,,,,,,,,,,,",False,NoData
-"NGC 3184,,11.1,,,,,,,,,,,,,,,,",False,NoData
-"NGC 3351,,10.1,,,,,,,,,,,,,,,,",False,NoData
-"NGC 3621,,6.6,,,,,,,,,,,,,,,,",False,NoData
-"NGC 3627,,9.3,,,,,,,,,,,,,,,,",False,NoData
-"NGC 4449,,4.2,,,,,,,,,,,,,,,,",False,NoData
-"NGC 4736,,4.7,,,,,,,,,,,,,,,,",False,NoData
-"NGC 4826,,7.5,,,,,,,,,,,,,,,,",False,NoData
-"NGC 5194,,8.0,,,,,,,,,,,,,,,,",False,NoData
-"NGC 5236,,4.5,,,,,,,,,,,,,,,,",False,NoData
-"NGC 5457,,7.4,,,,,,,,,,,,,,,,",False,NoData
-"NGC 628,,,,,,,,,,,,,,,,,,",False,NoData
-"NGC 925,,,,,,,,,,,,,,,,,,",False,NoData
-"NGC 1569,,,,,,,,,,,,,,,,,,",False,NoData
-"Ho II,,,,,,,,,,,,,,,,,,",False,NoData
-"M81 DwA,,,,,,,,,,,,,,,,,,",False,NoData
-"Ho I,,,,,,,,,,,,,,,,,,",False,NoData
-"NGC 3031,,,,,,,,,,,,,,,,,,",False,NoData
-"NGC 3077,,,,,,,,,,,,,,,,,,",False,NoData
-"M81 DwB,,,,,,,,,,,,,,,,,,",False,NoData
-"NGC 3184,,,,,,,,,,,,,,,,,,",False,NoData
-"NGC 3351,,,,,,,,,,,,,,,,,,",False,NoData
-"NGC 3621,,,,,,,,,,,,,,,,,,",False,NoData
-"NGC 3627,,,,,,,,,,,,,,,,,,",False,NoData
-"NGC 4449,,,,,,,,,,,,,,,,,,",False,NoData
-"NGC 4736,,,,,,,,,,,,,,,,,,",False,NoData
-"NGC 4826,,,,,,,,,,,,,,,,,,",False,NoData
-"NGC 5194,,,,,,,,,,,,,,,,,,",False,NoData
-"NGC 5236,,,,,,,,,,,,,,,,,,",False,NoData
-"NGC 5457,,,,,,,,,,,,,,,,,,",False,NoData
-NGC 628,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-NGC 925,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-NGC 1569,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-NGC 2366,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-NGC 2403,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-Ho II,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-M81 DwA,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-DDO  53,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-NGC 2841,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-NGC 2903,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-Ho I,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-NGC 2976,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-NGC 3031,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-NGC 3077,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-M81 DwB,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-NGC 3184,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-NGC 3198,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-IC 2574,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-NGC 3351,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-NGC 3521,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-NGC 3621,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-NGC 3627,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-NGC 4214,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-NGC 4449,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-NGC 4736,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-DDO 154,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-NGC 4826,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-NGC 5055,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-NGC 5194,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-NGC 5236,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-NGC 5457,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-NGC 6946,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-NGC 7331,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
-NGC 7793,False,No radial points | Points(0<8) | Empty radial data for range check | Missing or invalid velocity errors
+CamB,False,Range | OuterR | g_obs<<g_bar
+D512-2,False,Points(4<8) | Range | OuterR
+D564-8,False,Points(6<8) | Range | OuterR
+D631-7,False,Points(3<8) | Range | InnerR | OuterR
+DDO064,False,Range | OuterR
+DDO154,False,OuterR
+DDO161,True,PASS
+DDO168,False,Range | OuterR
+DDO170,False,InnerR
+ESO079-G014,True,PASS
+ESO116-G012,False,OuterR
+ESO444-G084,False,Points(7<8) | Range | OuterR
+ESO563-G021,False,g_obs<<g_bar
+F561-1,False,Points(6<8) | InnerR | OuterR
+F563-1,False,InnerR
+F563-V1,False,Points(6<8) | InnerR | OuterR
+F563-V2,True,PASS
+F565-V2,False,Points(7<8) | InnerR | OuterR
+F567-2,False,Points(5<8) | InnerR | OuterR
+F568-1,True,PASS
+F568-3,True,PASS
+F568-V1,True,PASS
+F571-8,False,g_obs<<g_bar
+F571-V1,False,Points(7<8) | InnerR
+F574-1,True,PASS
+F574-2,False,Points(5<8) | InnerR | Err | g_obs<<g_bar
+F579-V1,True,PASS
+F583-1,True,PASS
+F583-4,False,OuterR
+IC2574,True,PASS
+IC4202,False,g_obs<<g_bar
+KK98-251,False,Range | OuterR
+NGC0024,True,PASS
+NGC0055,False,InnerR
+NGC0100,False,OuterR
+NGC0247,False,InnerR
+NGC0289,False,InnerR
+NGC0300,True,PASS
+NGC0801,False,InnerR
+NGC0891,False,g_obs<<g_bar
+NGC1003,False,InnerR
+NGC1090,False,g_obs<<g_bar
+NGC1705,False,OuterR
+NGC2366,False,OuterR
+NGC2403,True,PASS
+NGC2683,False,InnerR
+NGC2841,False,InnerR
+NGC2903,False,g_obs<<g_bar
+NGC2915,False,g_obs<<g_bar
+NGC2955,True,PASS
+NGC2976,False,Range | OuterR | g_obs<<g_bar
+NGC2998,True,PASS
+NGC3109,False,OuterR
+NGC3198,False,g_obs<<g_bar
+NGC3521,True,PASS
+NGC3726,False,InnerR
+NGC3741,False,OuterR
+NGC3769,False,InnerR
+NGC3877,False,g_obs<<g_bar
+NGC3893,False,InnerR
+NGC3917,True,PASS
+NGC3949,False,Points(7<8) | InnerR | OuterR
+NGC3953,False,InnerR
+NGC3972,False,OuterR
+NGC3992,False,InnerR
+NGC4010,True,PASS
+NGC4013,False,InnerR
+NGC4051,False,Points(7<8) | InnerR
+NGC4068,False,Points(6<8) | Range | OuterR
+NGC4085,False,Points(7<8) | OuterR | g_obs<<g_bar
+NGC4088,False,InnerR
+NGC4100,False,InnerR
+NGC4138,False,Points(7<8) | InnerR
+NGC4157,False,InnerR
+NGC4183,True,PASS
+NGC4214,False,OuterR
+NGC4217,False,g_obs<<g_bar
+NGC4389,False,Points(6<8) | Range | OuterR | g_obs<<g_bar
+NGC4559,True,PASS
+NGC5005,True,PASS
+NGC5033,True,PASS
+NGC5055,True,PASS
+NGC5371,False,InnerR
+NGC5585,True,PASS
+NGC5907,False,InnerR
+NGC5985,False,InnerR
+NGC6015,True,PASS
+NGC6195,False,InnerR
+NGC6503,True,PASS
+NGC6674,False,InnerR
+NGC6789,False,Points(4<8) | Range | OuterR
+NGC6946,False,g_obs<<g_bar
+NGC7331,False,InnerR
+NGC7793,False,OuterR | g_obs<<g_bar
+NGC7814,True,PASS
+PGC51017,False,Points(6<8) | Range | OuterR
+UGC00128,False,InnerR
+UGC00191,False,OuterR
+UGC00634,False,Points(4<8) | InnerR
+UGC00731,True,PASS
+UGC00891,False,Points(5<8) | InnerR | OuterR
+UGC01230,True,PASS
+UGC01281,False,Range | OuterR | g_obs<<g_bar
+UGC02023,False,Points(5<8) | Range | OuterR | Err
+UGC02259,False,InnerR | OuterR
+UGC02455,False,Range | OuterR | g_obs<<g_bar
+UGC02487,False,InnerR
+UGC02885,False,InnerR
+UGC02916,True,PASS
+UGC02953,True,PASS
+UGC03205,True,PASS
+UGC03546,False,g_obs<<g_bar
+UGC03580,False,g_obs<<g_bar
+UGC04278,False,OuterR
+UGC04305,False,OuterR | g_obs<<g_bar
+UGC04325,False,Range | OuterR
+UGC04483,False,Range | OuterR
+UGC04499,False,OuterR
+UGC05005,True,PASS
+UGC05253,True,PASS
+UGC05414,False,Points(6<8) | Range | OuterR
+UGC05716,False,InnerR
+UGC05721,False,OuterR
+UGC05750,True,PASS
+UGC05764,False,Range | OuterR
+UGC05829,False,OuterR
+UGC05918,False,Range | OuterR
+UGC05986,False,OuterR
+UGC05999,False,Points(5<8) | InnerR
+UGC06399,False,OuterR
+UGC06446,True,PASS
+UGC06614,False,InnerR
+UGC06628,False,Points(7<8) | InnerR | OuterR
+UGC06667,False,OuterR
+UGC06786,True,PASS
+UGC06787,True,PASS
+UGC06818,False,OuterR
+UGC06917,False,InnerR
+UGC06923,False,Points(6<8) | Range | OuterR
+UGC06930,False,InnerR
+UGC06973,False,InnerR | OuterR | g_obs<<g_bar
+UGC06983,False,InnerR
+UGC07089,False,OuterR
+UGC07125,False,InnerR
+UGC07151,False,OuterR
+UGC07232,False,Points(4<8) | Range | OuterR
+UGC07261,False,Points(7<8) | OuterR
+UGC07323,False,OuterR
+UGC07399,False,OuterR
+UGC07524,True,PASS
+UGC07559,False,Points(7<8) | Range | OuterR
+UGC07577,False,Range | OuterR | Err
+UGC07603,False,Range | OuterR
+UGC07608,False,Range | OuterR
+UGC07690,False,Points(7<8) | Range | OuterR
+UGC07866,False,Points(7<8) | Range | OuterR
+UGC08286,False,OuterR
+UGC08490,True,PASS
+UGC08550,False,Range | OuterR
+UGC08699,False,g_obs<<g_bar
+UGC08837,False,Range | OuterR
+UGC09037,False,InnerR | g_obs<<g_bar
+UGC09133,True,PASS
+UGC09992,False,Points(5<8) | Range | OuterR
+UGC10310,False,Points(7<8) | InnerR | OuterR
+UGC11455,False,g_obs<<g_bar
+UGC11557,False,g_obs<<g_bar
+UGC11820,True,PASS
+UGC11914,False,OuterR
+UGC12506,True,PASS
+UGC12632,True,PASS
+UGC12732,True,PASS
+UGCA281,False,Points(7<8) | Range | OuterR
+UGCA442,False,OuterR
+UGCA444,False,Range | OuterR

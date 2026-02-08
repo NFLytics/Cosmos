@@ -79,22 +79,23 @@ class StatisticalInterpreter:
         n_sig_1sigma = np.sum(z_scores > 1.0)
         
         interpretation = {
-            'n_galaxies': len(df_success),
-            'mean_ratio': mean_ratio,
-            'std_ratio': std_ratio,
-            'sem_ratio': sem_ratio,
-            'mean_z_score': mean_z,
-            'combined_z': combined_z,
-            'combined_p': combined_p,
-            'n_galaxies_2sigma': n_sig_2sigma,
-            'n_galaxies_1sigma': n_sig_1sigma,
-            't_stat_cdm': t_stat_cdm,
-            'p_value_cdm': p_value_cdm,
-            't_stat_sdh': t_stat_sdh,
-            'p_value_sdh': p_value_sdh,
+            'n_galaxies': int(len(df_success)),
+            'mean_ratio': float(mean_ratio),
+            'std_ratio': float(std_ratio),
+            'sem_ratio': float(sem_ratio),
+            'mean_z_score': float(mean_z),
+            'combined_z': float(combined_z),
+            'combined_p': float(combined_p),
+            'n_galaxies_2sigma': int(n_sig_2sigma),
+            'n_galaxies_1sigma': int(n_sig_1sigma),
+            't_stat_cdm': float(t_stat_cdm),
+            'p_value_cdm': float(p_value_cdm),
+            't_stat_sdh': float(t_stat_sdh),
+            'p_value_sdh': float(p_value_sdh),
             'winner': winner,
             'confidence': confidence,
             'success': True,
+            'overall_conclusion': f"{winner} ({confidence}) - {combined_z:.1f}σ ensemble significance"
         }
         
         return interpretation

@@ -1,6 +1,8 @@
 Galaxy,Passes,Reason
+CamB,False,Range | OuterR | g_obs<<g_bar
+D512-2,False,Points(4<6) | Range | OuterR
 D564-8,False,Range | OuterR
-D631-7,False,OuterR
+D631-7,False,Points(3<6) | Range | InnerR | OuterR
 DDO064,False,Range | OuterR
 DDO154,False,OuterR
 DDO161,True,PASS
@@ -9,25 +11,25 @@ DDO170,True,PASS
 ESO079-G014,True,PASS
 ESO116-G012,True,PASS
 ESO444-G084,False,OuterR
-ESO563-G021,True,PASS
+ESO563-G021,False,g_obs<<g_bar
 F561-1,True,PASS
 F563-1,True,PASS
 F563-V1,False,OuterR
 F563-V2,True,PASS
 F565-V2,True,PASS
-F567-2,False,Points
+F567-2,False,Points(5<6)
 F568-1,True,PASS
 F568-3,True,PASS
 F568-V1,True,PASS
-F571-8,True,PASS
+F571-8,False,g_obs<<g_bar
 F571-V1,True,PASS
 F574-1,True,PASS
-F574-2,False,Points | InnerR | Err
+F574-2,False,Points(5<6) | InnerR | Err | g_obs<<g_bar
 F579-V1,True,PASS
 F583-1,True,PASS
 F583-4,False,OuterR
 IC2574,True,PASS
-IC4202,True,PASS
+IC4202,False,g_obs<<g_bar
 KK98-251,False,Range | OuterR
 NGC0024,True,PASS
 NGC0055,True,PASS
@@ -36,26 +38,26 @@ NGC0247,True,PASS
 NGC0289,True,PASS
 NGC0300,True,PASS
 NGC0801,True,PASS
-NGC0891,True,PASS
+NGC0891,False,g_obs<<g_bar
 NGC1003,True,PASS
-NGC1090,True,PASS
+NGC1090,False,g_obs<<g_bar
 NGC1705,False,OuterR
 NGC2366,False,OuterR
 NGC2403,True,PASS
 NGC2683,False,InnerR
 NGC2841,False,InnerR
-NGC2903,True,PASS
-NGC2915,True,PASS
+NGC2903,False,g_obs<<g_bar
+NGC2915,False,g_obs<<g_bar
 NGC2955,True,PASS
-NGC2976,False,Range | OuterR
+NGC2976,False,Range | OuterR | g_obs<<g_bar
 NGC2998,True,PASS
 NGC3109,False,OuterR
-NGC3198,True,PASS
+NGC3198,False,g_obs<<g_bar
 NGC3521,True,PASS
 NGC3726,False,InnerR
 NGC3741,False,OuterR
 NGC3769,True,PASS
-NGC3877,True,PASS
+NGC3877,False,g_obs<<g_bar
 NGC3893,True,PASS
 NGC3917,True,PASS
 NGC3949,False,OuterR
@@ -66,15 +68,15 @@ NGC4010,True,PASS
 NGC4013,False,InnerR
 NGC4051,True,PASS
 NGC4068,False,Range | OuterR
-NGC4085,False,OuterR
+NGC4085,False,OuterR | g_obs<<g_bar
 NGC4088,True,PASS
 NGC4100,False,InnerR
 NGC4138,False,InnerR
 NGC4157,True,PASS
 NGC4183,True,PASS
 NGC4214,False,OuterR
-NGC4217,True,PASS
-NGC4389,False,OuterR
+NGC4217,False,g_obs<<g_bar
+NGC4389,False,OuterR | g_obs<<g_bar
 NGC4559,True,PASS
 NGC5005,True,PASS
 NGC5033,True,PASS
@@ -87,31 +89,31 @@ NGC6015,True,PASS
 NGC6195,True,PASS
 NGC6503,True,PASS
 NGC6674,False,InnerR
-NGC6789,False,Points | Range | OuterR
-NGC6946,True,PASS
+NGC6789,False,Points(4<6) | Range | OuterR
+NGC6946,False,g_obs<<g_bar
 NGC7331,False,InnerR
-NGC7793,False,OuterR
+NGC7793,False,OuterR | g_obs<<g_bar
 NGC7814,True,PASS
 PGC51017,False,Range | OuterR
 UGC00128,True,PASS
 UGC00191,True,PASS
-UGC00634,False,Points | InnerR
+UGC00634,False,Points(4<6) | InnerR
 UGC00731,True,PASS
-UGC00891,False,Points | OuterR
+UGC00891,False,Points(5<6) | OuterR
 UGC01230,True,PASS
-UGC01281,False,OuterR
-UGC02023,False,Points | Range | OuterR
+UGC01281,False,OuterR | g_obs<<g_bar
+UGC02023,False,Points(5<6) | Range | OuterR
 UGC02259,True,PASS
-UGC02455,False,Range | OuterR
+UGC02455,False,Range | OuterR | g_obs<<g_bar
 UGC02487,False,InnerR
 UGC02885,True,PASS
 UGC02916,True,PASS
 UGC02953,True,PASS
 UGC03205,True,PASS
-UGC03546,True,PASS
-UGC03580,True,PASS
+UGC03546,False,g_obs<<g_bar
+UGC03580,False,g_obs<<g_bar
 UGC04278,False,OuterR
-UGC04305,False,OuterR
+UGC04305,False,OuterR | g_obs<<g_bar
 UGC04325,False,OuterR
 UGC04483,False,Range | OuterR
 UGC04499,True,PASS
@@ -125,7 +127,7 @@ UGC05764,False,Range | OuterR
 UGC05829,False,OuterR
 UGC05918,False,Range | OuterR
 UGC05986,True,PASS
-UGC05999,False,Points | InnerR
+UGC05999,False,Points(5<6) | InnerR
 UGC06399,False,OuterR
 UGC06446,True,PASS
 UGC06614,False,InnerR
@@ -137,12 +139,12 @@ UGC06818,False,OuterR
 UGC06917,True,PASS
 UGC06923,False,OuterR
 UGC06930,True,PASS
-UGC06973,False,OuterR
+UGC06973,False,OuterR | g_obs<<g_bar
 UGC06983,True,PASS
 UGC07089,True,PASS
 UGC07125,True,PASS
 UGC07151,False,OuterR
-UGC07232,False,Points | Range | OuterR
+UGC07232,False,Points(4<6) | Range | OuterR
 UGC07261,False,OuterR
 UGC07323,False,OuterR
 UGC07399,False,OuterR
@@ -156,14 +158,14 @@ UGC07866,False,Range | OuterR
 UGC08286,True,PASS
 UGC08490,True,PASS
 UGC08550,False,OuterR
-UGC08699,True,PASS
+UGC08699,False,g_obs<<g_bar
 UGC08837,False,Range | OuterR
-UGC09037,False,InnerR
+UGC09037,False,InnerR | g_obs<<g_bar
 UGC09133,True,PASS
-UGC09992,False,Points | Range | OuterR
+UGC09992,False,Points(5<6) | Range | OuterR
 UGC10310,False,OuterR
-UGC11455,True,PASS
-UGC11557,True,PASS
+UGC11455,False,g_obs<<g_bar
+UGC11557,False,g_obs<<g_bar
 UGC11820,True,PASS
 UGC11914,True,PASS
 UGC12506,True,PASS

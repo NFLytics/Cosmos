@@ -186,6 +186,8 @@ class RARFitter:
             
             if d2chi2_log > 0:
                 log_a0_error = 1.0 / np.sqrt(d2chi2_log)
+                # Floor error at 5% to avoid numerical artifacts from float32/ONNX
+                log_a0_error = max(log_a0_error, 0.02) 
                 # Convert log error to linear error: Δa0 ≈ a0 * ln(10) * Δlog_a0
                 a0_error = a0_best * np.log(10) * log_a0_error
             else:

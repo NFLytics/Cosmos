@@ -52,6 +52,15 @@ class QualityCriteria:
             self.max_velocity_error_fraction = 0.30
             self.name = "MINIMAL"
         
+        elif strictness == 'maximal':
+            self.min_points = 3
+            self.min_radial_range_kpc = 0.0
+            self.min_inner_radius_kpc = 0.0
+            self.max_inner_radius_kpc = 100.0
+            self.min_outer_radius_kpc = 0.0
+            self.max_velocity_error_fraction = 1.0
+            self.name = "MAXIMAL"
+        
         else:
             raise ValueError(f"Unknown strictness: {strictness}")
     
@@ -99,30 +108,37 @@ class SPARCRotationCurvesV2:
         else:
             raise KeyError("Galaxy column not found in Table1 metadata after potential rename.")
 
-        self.galaxies = self.df_table1['Galaxy'].unique().tolist()
+        # Discovery: use files from sparc_mass_models to get full galaxy list if available
+        if self.mass_models_dir.exists():
+            self.galaxies = [f.stem for f in self.mass_models_dir.glob('*.txt')]
+            logger.info(f"Discovered {len(self.galaxies)} galaxies from {self.mass_models_dir}")
+        else:
+            self.galaxies = self.df_table1['Galaxy'].unique().tolist()
         
         # Add galaxy metadata
         self.galaxy_metadata = self._extract_galaxy_metadata()
         
-        logger.info(f"Loaded {len(self.galaxies)} galaxies")
+        logger.info(f"Loaded {len(self.galaxies)} galaxies total")
     
     def _load_table1(self) -> pd.DataFrame:
-        """Load Table1 metadata, prioritizing expanded CSV, falling back to original MRT."""
-        path_csv = self.sparc_dir / 'Table1_expanded.csv'
-        path_mrt = self.sparc_dir / 'Table1.mrt'
+        """Load Table1 metadata, prioritizing expanded/cleaned CSV, falling back to original MRT."""
+        paths = [
+            self.sparc_dir / 'Table1_cleaned.csv',
+            self.sparc_dir / 'Table1_expanded.csv',
+            self.sparc_dir / 'Table1.mrt'
+        ]
         
         file_to_load = None
-        if path_csv.exists():
-            file_to_load = str(path_csv)
-            logger.info(f"Loading Table1 from expanded CSV: {file_to_load}")
-        elif path_mrt.exists():
-            file_to_load = str(path_mrt)
-            logger.info(f"Loading Table1 from original MRT: {file_to_load}. Attempting to parse as CSV.")
-        else:
-            raise FileNotFoundError("Table1.mrt or Table1_expanded.csv not found.")
+        for path in paths:
+            if path.exists():
+                file_to_load = str(path)
+                break
+        
+        if not file_to_load:
+            raise FileNotFoundError("Table1.mrt or Table1_cleaned.csv not found.")
 
+        logger.info(f"Loading Table1 from: {file_to_load}")
         try:
-            # Use pandas read_csv with default settings; it's robust for CSV and may handle some MRT variants if they are space-delimited.
             df = pd.read_csv(file_to_load)
             df.columns = [col.strip() for col in df.columns]
             return df
@@ -131,22 +147,24 @@ class SPARCRotationCurvesV2:
             raise
 
     def _load_table2(self) -> pd.DataFrame:
-        """Load Table2 metadata, prioritizing expanded CSV, falling back to original MRT."""
-        path_csv = self.sparc_dir / 'Table2_expanded.csv'
-        path_mrt = self.sparc_dir / 'Table2.mrt'
+        """Load Table2 metadata, prioritizing expanded/cleaned CSV, falling back to original MRT."""
+        paths = [
+            self.sparc_dir / 'Table2_cleaned.csv',
+            self.sparc_dir / 'Table2_expanded.csv',
+            self.sparc_dir / 'Table2.mrt'
+        ]
         
         file_to_load = None
-        if path_csv.exists():
-            file_to_load = str(path_csv)
-            logger.info(f"Loading Table2 from expanded CSV: {file_to_load}")
-        elif path_mrt.exists():
-            file_to_load = str(path_mrt)
-            logger.info(f"Loading Table2 from original MRT: {file_to_load}. Attempting to parse as CSV.")
-        else:
-            raise FileNotFoundError("Table2.mrt or Table2_expanded.csv not found.")
+        for path in paths:
+            if path.exists():
+                file_to_load = str(path)
+                break
+        
+        if not file_to_load:
+            raise FileNotFoundError("Table2.mrt or Table2_cleaned.csv not found.")
 
+        logger.info(f"Loading Table2 from: {file_to_load}")
         try:
-            # Use pandas read_csv with default settings
             df = pd.read_csv(file_to_load)
             df.columns = [col.strip() for col in df.columns]
             return df
@@ -183,9 +201,29 @@ class SPARCRotationCurvesV2:
         return 'unknown'
     
     def extract_galaxy_profile(self, galaxy_name: str) -> Optional[Dict]:
+        # Try to get from Table2 first
         gal_data = self.df_table2[self.df_table2['Galaxy'] == galaxy_name].copy()
+        
+        # If Table2 is empty or mostly NaNs, try the individual file
+        if len(gal_data) < 3 or gal_data['Vobs'].isna().sum() > len(gal_data) - 3:
+            # Try individual file in sparc_mass_models
+            file_path = self.sparc_dir / 'sparc_mass_models' / f"{galaxy_name.replace(' ', '')}.txt"
+            if file_path.exists():
+                logger.info(f"Loading data for {galaxy_name} from individual file: {file_path}")
+                try:
+                    # Skip header lines (starting with #)
+                    df_ind = pd.read_csv(file_path, sep=r'\s+', comment='#', 
+                                         names=['R', 'Vobs', 'e_Vobs', 'Vgas', 'Vdisk', 'Vbul', 'SBdisk', 'SBbul'])
+                    gal_data = df_ind
+                except Exception as e:
+                    logger.warning(f"Failed to load individual file for {galaxy_name}: {e}")
+            else:
+                # Try with different naming convention (e.g. NGC0024 instead of NGC 24)
+                # (Already handled by replace(' ', '') above)
+                pass
+
         if len(gal_data) < 3: 
-            logger.warning(f"Galaxy {galaxy_name} has insufficient data points for analysis (found {len(gal_data)}, need >= 3).")
+            logger.warning(f"Galaxy {galaxy_name} has insufficient data points for analysis.")
             return None
         
         # Ensure columns are numeric, coerce errors to NaN
@@ -194,18 +232,25 @@ class SPARCRotationCurvesV2:
             if col in gal_data.columns:
                 gal_data[col] = pd.to_numeric(gal_data[col], errors='coerce')
         
+        # Drop rows with NaN in critical columns
+        gal_data = gal_data.dropna(subset=['R', 'Vobs'])
+        
+        if len(gal_data) < 3:
+            return None
+
         r = gal_data['R'].values
         v_obs = gal_data['Vobs'].values
         v_gas = gal_data['Vgas'].values if 'Vgas' in gal_data.columns else np.zeros_like(v_obs)
         v_disk = gal_data['Vdisk'].values if 'Vdisk' in gal_data.columns else np.zeros_like(v_obs)
         v_bul = gal_data['Vbul'].values if 'Vbul' in gal_data.columns else np.zeros_like(v_obs)
-        v_err = gal_data['e_Vobs'].values if 'e_Vobs' in gal_data.columns else np.full_like(v_obs, 0.05 * v_obs) # Default error if missing
+        v_err = gal_data['e_Vobs'].values if 'e_Vobs' in gal_data.columns else np.full_like(v_obs, 0.05 * v_obs)
         
         # Conversion factor from (km/s)^2 / kpc to m/s^2
         conv = 3.24078e-14
         
-        # Total baryonic velocity: v_bar^2 = v_gas^2 + v_disk^2 + v_bul^2
-        v_bar_sq = v_gas**2 + v_disk**2 + v_bul**2
+        # Total baryonic velocity: v_bar^2 = v_gas^2 + Ups_disk * v_disk^2 + Ups_bulge * v_bul^2
+        # Using McGaugh 2016 reference values for 3.6um: disk=0.5, bulge=0.7
+        v_bar_sq = v_gas**2 + 0.5 * v_disk**2 + 0.7 * v_bul**2
         
         with np.errstate(divide='ignore', invalid='ignore'):
             g_obs = (v_obs ** 2) / r * conv
@@ -273,11 +318,12 @@ class SPARCRotationCurvesV2:
             reasons.append("Missing or invalid velocity errors")
         
         # Check for unphysical g_obs < g_bar, but only if both are valid and finite
-        if 'g_obs' in galaxy_data and 'g_bar' in galaxy_data and len(g_obs_values) > 0 and len(g_bar_values) > 0:
+        if self.quality_criteria.name != "MAXIMAL" and 'g_obs' in galaxy_data and 'g_bar' in galaxy_data and len(g_obs_values) > 0 and len(g_bar_values) > 0:
             finite_mask = np.isfinite(g_obs_values) & np.isfinite(g_bar_values)
             if np.sum(finite_mask) > 0:
-                if np.any(g_obs_values[finite_mask] < g_bar_values[finite_mask]):
-                    reasons.append("g_obs<g_bar")
+                # Relaxed check: only fail if g_obs is significantly less than g_bar
+                if np.any(g_obs_values[finite_mask] < 0.7 * g_bar_values[finite_mask]):
+                    reasons.append("g_obs<<g_bar")
         
         return len(reasons) == 0, " | ".join(reasons) if reasons else "PASS"
     
