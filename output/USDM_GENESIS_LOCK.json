@@ -1,0 +1,12 @@
+{
+    "Entity": "2.8349 eV USDM Scalar Field",
+    "Quantum_State": "Laminar Superfluid / BEC",
+    "Collision_Dynamics": {
+        "Filament_Threshold_Delta": 2.0253,
+        "Acoustic_Overhead_pct": 2.44,
+        "Self_Healing_Entropy_dex": 0.3213
+    },
+    "Field_Convergence": "Stable across Spin 0-2 interactions",
+    "Genesis_Status": "COMPLETE - NON-CONTRADICTORY",
+    "Hardware_Constraint": "HP Z440 (8GB VRAM Optimized)"
+}

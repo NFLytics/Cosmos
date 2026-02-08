@@ -1,0 +1,11 @@
+{
+    "model_name": "Unified Superfluid Dark Matter (USDM)",
+    "parameters": {
+        "w_early": 0.0003,
+        "z_transition": 1.0,
+        "c_s_late": 30.0,
+        "particle_mass_ev": 0.12390971843170176,
+        "critical_temp_k": 0.43199456915255585
+    },
+    "status": "TIER 1 CONFIRMED"
+}

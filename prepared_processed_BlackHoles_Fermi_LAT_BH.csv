@@ -1,0 +1,2 @@
+name,ra,dec,flux_1_100_gev,flux_1_100_gev_error,detection_significance,spectrum_type,alt_gammaray_name_1,assoc_name,analysis_flags,__row,framework_id,frame_hash
+4FGL J1230.8+1223,187.7123,12.3883,1.647e-09,6.6228e-11,46.9832,LogParabola,3FGL J1230.9+1224,M 87,0,4631,5483370411004738685,6713547864349925764

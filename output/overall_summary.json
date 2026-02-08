@@ -1,238 +1,122 @@
-{
-    "strict": {
-        "all": {
-            "n_galaxies": 44,
-            "mean_ratio": 1.5373455758288523,
-            "std_ratio": 1.1522461071411403,
-            "sem_ratio": 0.17370763652430954,
-            "mean_z_score": 0.48727842423137885,
-            "combined_z": 3.232239403222213,
-            "combined_p": 0.0006141205378065173,
-            "n_galaxies_2sigma": 21,
-            "n_galaxies_1sigma": 22,
-            "t_stat_cdm": 3.0933906337137542,
-            "p_value_cdm": 0.000989417371349055,
-            "t_stat_sdh": 2.402574717954019,
-            "p_value_sdh": 0.991859945828948,
-            "winner": "SDH+",
-            "confidence": "HIGH",
-            "success": true,
-            "overall_conclusion": "SDH+ (HIGH) - 3.2\u03c3 ensemble significance"
-        },
-        "spirals": {
-            "n_galaxies": 36,
-            "mean_ratio": 1.4790576573298628,
-            "std_ratio": 1.219169760824214,
-            "sem_ratio": 0.203194960137369,
-            "mean_z_score": -0.4241858683814046,
-            "combined_z": -2.5451152102884276,
-            "combined_p": 0.994537915563938,
-            "n_galaxies_2sigma": 15,
-            "n_galaxies_1sigma": 16,
-            "t_stat_cdm": 2.3576256862177987,
-            "p_value_cdm": 0.009196113993511612,
-            "t_stat_sdh": 1.7670598576220762,
-            "p_value_sdh": 0.9613908978383023,
-            "winner": "INCONCLUSIVE",
-            "confidence": "LOW",
-            "success": true,
-            "overall_conclusion": "INCONCLUSIVE (LOW) - -2.5\u03c3 ensemble significance"
-        },
-        "dwarfs": {
-            "n_galaxies": 8,
-            "mean_ratio": 1.7996412090743068,
-            "std_ratio": 0.7276099651742415,
-            "sem_ratio": 0.2572489702168069,
-            "mean_z_score": 4.5888677409889045,
-            "combined_z": 12.979277990485793,
-            "combined_p": 0.0,
-            "n_galaxies_2sigma": 6,
-            "n_galaxies_1sigma": 6,
-            "t_stat_cdm": 3.1084330809968916,
-            "p_value_cdm": 0.0009404111712340013,
-            "t_stat_sdh": 2.64195891047304,
-            "p_value_sdh": 0.9958785972393787,
-            "winner": "SDH+",
-            "confidence": "HIGH",
-            "success": true,
-            "overall_conclusion": "SDH+ (HIGH) - 13.0\u03c3 ensemble significance"
-        }
-    },
-    "relaxed": {
-        "all": {
-            "n_galaxies": 77,
-            "mean_ratio": 1.4083262933073057,
-            "std_ratio": 0.9840321995793698,
-            "sem_ratio": 0.11214087671891047,
-            "mean_z_score": -0.2951801254025969,
-            "combined_z": -2.590195088273729,
-            "combined_p": 0.9952039222582487,
-            "n_galaxies_2sigma": 35,
-            "n_galaxies_1sigma": 36,
-            "t_stat_cdm": 3.6411904851681003,
-            "p_value_cdm": 0.000135690123870158,
-            "t_stat_sdh": 2.5711078934224596,
-            "p_value_sdh": 0.9949313130540992,
-            "winner": "INCONCLUSIVE",
-            "confidence": "LOW",
-            "success": true,
-            "overall_conclusion": "INCONCLUSIVE (LOW) - -2.6\u03c3 ensemble significance"
-        },
-        "spirals": {
-            "n_galaxies": 64,
-            "mean_ratio": 1.3480684384262411,
-            "std_ratio": 0.995042264738088,
-            "sem_ratio": 0.124380283092261,
-            "mean_z_score": -1.0431696351610478,
-            "combined_z": -8.345357081288382,
-            "combined_p": 1.0,
-            "n_galaxies_2sigma": 27,
-            "n_galaxies_1sigma": 28,
-            "t_stat_cdm": 2.7984213395627666,
-            "p_value_cdm": 0.0025676537935118704,
-            "t_stat_sdh": 1.8336382001725124,
-            "p_value_sdh": 0.9666461410943635,
-            "winner": "INCONCLUSIVE",
-            "confidence": "LOW",
-            "success": true,
-            "overall_conclusion": "INCONCLUSIVE (LOW) - -8.3\u03c3 ensemble significance"
-        },
-        "dwarfs": {
-            "n_galaxies": 13,
-            "mean_ratio": 1.7049803481063939,
-            "std_ratio": 0.869003707886319,
-            "sem_ratio": 0.24101826364249643,
-            "mean_z_score": 3.3872297687928556,
-            "combined_z": 12.212830613160675,
-            "combined_p": 0.0,
-            "n_galaxies_2sigma": 8,
-            "n_galaxies_1sigma": 8,
-            "t_stat_cdm": 2.925007995045947,
-            "p_value_cdm": 0.001722236867669702,
-            "t_stat_sdh": 2.4271204151320998,
-            "p_value_sdh": 0.9923903982218139,
-            "winner": "SDH+",
-            "confidence": "HIGH",
-            "success": true,
-            "overall_conclusion": "SDH+ (HIGH) - 12.2\u03c3 ensemble significance"
-        }
-    },
-    "minimal": {
-        "all": {
-            "n_galaxies": 100,
-            "mean_ratio": 1.4840329633841582,
-            "std_ratio": 1.3803403229344897,
-            "sem_ratio": 0.13803403229344896,
-            "mean_z_score": -1.2277978868252044,
-            "combined_z": -12.277978868252044,
-            "combined_p": 1.0,
-            "n_galaxies_2sigma": 45,
-            "n_galaxies_1sigma": 46,
-            "t_stat_cdm": 3.5066204713569773,
-            "p_value_cdm": 0.00022691797361185095,
-            "t_stat_sdh": 2.6372696452875775,
-            "p_value_sdh": 0.9958211816224262,
-            "winner": "INCONCLUSIVE",
-            "confidence": "LOW",
-            "success": true,
-            "overall_conclusion": "INCONCLUSIVE (LOW) - -12.3\u03c3 ensemble significance"
-        },
-        "spirals": {
-            "n_galaxies": 84,
-            "mean_ratio": 1.4326353714672293,
-            "std_ratio": 1.4269819657826501,
-            "sem_ratio": 0.1556964969889495,
-            "mean_z_score": -2.011953935221788,
-            "combined_z": -18.439862405836244,
-            "combined_p": 1.0,
-            "n_galaxies_2sigma": 36,
-            "n_galaxies_1sigma": 37,
-            "t_stat_cdm": 2.7787097322936907,
-            "p_value_cdm": 0.0027287634504586933,
-            "t_stat_sdh": 2.0079794826046626,
-            "p_value_sdh": 0.9776772640067033,
-            "winner": "INCONCLUSIVE",
-            "confidence": "LOW",
-            "success": true,
-            "overall_conclusion": "INCONCLUSIVE (LOW) - -18.4\u03c3 ensemble significance"
-        },
-        "dwarfs": {
-            "n_galaxies": 16,
-            "mean_ratio": 1.7538703209480342,
-            "std_ratio": 1.0635944097992391,
-            "sem_ratio": 0.2658986024498098,
-            "mean_z_score": 2.8890213672568597,
-            "combined_z": 11.556085469027439,
-            "combined_p": 0.0,
-            "n_galaxies_2sigma": 9,
-            "n_galaxies_1sigma": 9,
-            "t_stat_cdm": 2.8351797038509536,
-            "p_value_cdm": 0.0022899957505818636,
-            "t_stat_sdh": 2.383879851597496,
-            "p_value_sdh": 0.9914344027741108,
-            "winner": "SDH+",
-            "confidence": "HIGH",
-            "success": true,
-            "overall_conclusion": "SDH+ (HIGH) - 11.6\u03c3 ensemble significance"
-        }
-    },
-    "maximal": {
-        "all": {
-            "n_galaxies": 161,
-            "mean_ratio": 1.342575633704974,
-            "std_ratio": 1.4173352688471113,
-            "sem_ratio": 0.11170166745081019,
-            "mean_z_score": -18.727367672040636,
-            "combined_z": -237.62365683519522,
-            "combined_p": 1.0,
-            "n_galaxies_2sigma": 65,
-            "n_galaxies_1sigma": 66,
-            "t_stat_cdm": 3.066880213366852,
-            "p_value_cdm": 0.0010815276022871911,
-            "t_stat_sdh": 1.9925900730442447,
-            "p_value_sdh": 0.97684682345393,
-            "winner": "INCONCLUSIVE",
-            "confidence": "LOW",
-            "success": true,
-            "overall_conclusion": "INCONCLUSIVE (LOW) - -237.6\u03c3 ensemble significance"
-        },
-        "spirals": {
-            "n_galaxies": 136,
-            "mean_ratio": 1.342353240398095,
-            "std_ratio": 1.4770300260284173,
-            "sem_ratio": 0.12665427983843827,
-            "mean_z_score": -19.780054716340125,
-            "combined_z": -230.67309505677434,
-            "combined_p": 1.0,
-            "n_galaxies_2sigma": 56,
-            "n_galaxies_1sigma": 57,
-            "t_stat_cdm": 2.7030530735700746,
-            "p_value_cdm": 0.0034352887458248826,
-            "t_stat_sdh": 1.7555919995892066,
-            "p_value_sdh": 0.9604209503633373,
-            "winner": "INCONCLUSIVE",
-            "confidence": "LOW",
-            "success": true,
-            "overall_conclusion": "INCONCLUSIVE (LOW) - -230.7\u03c3 ensemble significance"
-        },
-        "dwarfs": {
-            "n_galaxies": 23,
-            "mean_ratio": 1.4276564475744968,
-            "std_ratio": 1.0363123905671712,
-            "sem_ratio": 0.21608607089920012,
-            "mean_z_score": -11.946018268978563,
-            "combined_z": -57.291090992437034,
-            "combined_p": 1.0,
-            "n_galaxies_2sigma": 9,
-            "n_galaxies_1sigma": 9,
-            "t_stat_cdm": 1.9791023354484987,
-            "p_value_cdm": 0.023902242795914574,
-            "t_stat_sdh": 1.4237680674846107,
-            "p_value_sdh": 0.9227431888544869,
-            "winner": "INCONCLUSIVE",
-            "confidence": "LOW",
-            "success": true,
-            "overall_conclusion": "INCONCLUSIVE (LOW) - -57.3\u03c3 ensemble significance"
-        }
-    }
-}
+bash -c "cat << 'EOF' > src/phase3_fine_tune.py
+import numpy as np
+from scipy.integrate import odeint
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# --- CONSTANTS ---
+H0 = 67.4
+OM_PLANCK = 0.315
+OL_PLANCK = 0.685
+OR_PLANCK = 8e-5
+C_LIGHT = 3e5
+
+def get_eos_varying(a, params):
+    \"\"\"
+    params = (peak_cs, z_crit)
+    \"\"\"
+    c_s_val, z_c = params
+    z = (1.0/a) - 1.0
+    
+    # Sigmoid Activation
+    # We use a sharper transition (factor 4.0) to strictly separate epochs
+    weight = 1.0 / (1.0 + np.exp(4.0 * (z - z_c)))
+    
+    c_s = c_s_val * weight
+    w = (c_s / C_LIGHT)**2
+    return w, c_s
+
+def physics_engine(y, a, k_mode, params):
+    rho, d, dd = y
+    w, c_s = get_eos_varying(a, params)
+    
+    drho_da = -3 * (rho / a) * (1 + w)
+    
+    E_sq = (OR_PLANCK / a**4) + rho + OL_PLANCK
+    H = H0 * np.sqrt(E_sq)
+    dH = (H0**2 / (2*H)) * (-4*OR_PLANCK/a**5 + drho_da)
+    
+    # Pressure
+    pressure = (c_s / H)**2 * (k_mode**2 / a**2) * d
+    
+    friction = (3/a + dH/H) * dd
+    gravity = 1.5 * rho * (H0 / H)**2 / a**2 * d
+    
+    d_dd = gravity - friction - pressure
+    return [drho_da, dd, d_dd]
+
+def run_fine_tune():
+    print('Phase 3e: 2D Parameter Sweep (Speed vs. Timing)')
+    print('Searching for the \"Survival Epoch\"...')
+    print('--------------------------------------------------------------------------------')
+    print(f'{\"Speed (km/s)\":<12} | {\"Transition (z)\":<15} | {\"S8 (k=0.7)\":<12} | {\"Dwarf (k=10)\":<12} | {\"Status\"}')
+    print('--------------------------------------------------------------------------------')
+    
+    # 2D Grid
+    cs_range = [30, 40, 50, 60]
+    z_range = [2.0, 1.5, 1.0, 0.7, 0.5]
+    
+    a_range = np.logspace(-3, 0, 400)
+    rho_init = OM_PLANCK * (a_range[0])**-3 
+    y0 = [rho_init, 1e-3, 1e-3]
+    
+    # CDM Baseline
+    sol_cdm = odeint(physics_engine, y0, a_range, args=(1.0, (0.0, 10.0)))
+    growth_cdm = sol_cdm[-1, 1]
+    
+    results = []
+    
+    for z_c in z_range:
+        for c_s in cs_range:
+            params = (c_s, z_c)
+            
+            # S8 Scale
+            sol_s8 = odeint(physics_engine, y0, a_range, args=(0.7, params))
+            r_s8 = sol_s8[-1, 1] / growth_cdm
+            
+            # Dwarf Scale
+            sol_dwarf = odeint(physics_engine, y0, a_range, args=(10.0, params))
+            r_dwarf = sol_dwarf[-1, 1] / growth_cdm
+            
+            # Verdict Logic
+            status = \"FAIL\"
+            
+            # 1. Survival Check
+            if r_dwarf > 0.5:
+                # 2. Tension Check
+            	if 0.92 <= r_s8 <= 0.97:
+                	status = \"!!! UNIFIED !!!\"
+               	elif r_s8 < 0.92:
+               		status = \"S8 Strong\"
+               	elif r_s8 > 0.97:
+               		status = \"S8 Weak\"
+            else:
+               	status = \"Dwarf Death\"
+                
+            print(f'{c_s:<12} | {z_c:<15} | {r_s8:<12.4f} | {r_dwarf:<12.4f} | {status}')
+            results.append({'cs': c_s, 'z_c': z_c, 's8': r_s8, 'dwarf': r_dwarf})
+
+    # Save to CSV for analysis
+    df = pd.DataFrame(results)
+    df.to_csv('output/fine_tune_results.csv', index=False)
+    print('\\nResults saved to output/fine_tune_results.csv')
+
+    # Visualizing the Best 'z' for a fixed 'cs=40'
+    best_z = df[df['cs'] == 40]
+    plt.figure(figsize=(10,6))
+    plt.plot(best_z['z_c'], best_z['s8'], 'o-', label='S8 (k=0.7)')
+    plt.plot(best_z['z_c'], best_z['dwarf'], 's-', label='Dwarfs (k=10)')
+    plt.axhspan(0.92, 0.97, color='green', alpha=0.1, label='S8 Target Zone')
+    plt.axhline(0.5, color='red', linestyle='--', label='Dwarf Survival')
+    plt.xlabel('Transition Redshift (z_c)')
+    plt.ylabel('Growth Ratio (USDM/CDM)')
+    plt.title('The Impact of Transition Timing (fixed c_s=40 km/s)')
+    plt.gca().invert_xaxis() # High z (left) to Low z (right)
+    plt.legend()
+    plt.grid(True, alpha=0.3)
+    plt.savefig('output/phase3_timing.png')
+
+if __name__ == '__main__':
+    run_fine_tune()
+EOF
+python3 src/phase3_fine_tune.py"

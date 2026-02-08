@@ -1,0 +1,21 @@
+{
+    "Model": "USDM-v1.2 (Thermodynamic Lock)",
+    "Constituents": {
+        "m_boson": "2.8349 eV",
+        "cs_basal": "80.0 km/s",
+        "ML_ratio": 0.5
+    },
+    "Phenomena_Recalibration": {
+        "Acoustic_Horizon_Breach": "74.6% of points (Supersonic)",
+        "Global_Sigma_RAR": 0.3135,
+        "HSB_Sigma": 0.3436,
+        "LSB_Sigma": 0.2586,
+        "S8_Suppression": "7.0% (σ=0.146)"
+    },
+    "Interaction_Vectors": [
+        "Laminar Sloshing (Subsonic)",
+        "Kinetic Scattering (Supersonic)",
+        "Quantum Depletion (High Density)"
+    ],
+    "Hardware_Context": "HP Z440 / Xeon E5-1630 v3 / 32GB / Quadro M4000 (8GB VRAM)"
+}

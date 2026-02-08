@@ -1,0 +1,9 @@
+{
+    "Entity": "2.8349 eV Scalar Field",
+    "State_A_Superfluid": "Active for V < 320 km/s (Galactic Regime)",
+    "State_B_Classical": "Active for V > 320 km/s (Cluster Regime)",
+    "Shatter_Index": -3.7595,
+    "Entropy_Limit": "2.0081 dex",
+    "Resolution": "Framework is a Hybrid-State Superfluid (HSS)",
+    "Protocol": "RADAR-DEV-INIT-03-MAX"
+}

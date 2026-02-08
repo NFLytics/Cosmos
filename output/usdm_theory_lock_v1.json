@@ -1,0 +1,14 @@
+{
+    "theory": "United Superfluid Dark Matter (USDM)",
+    "particle_mass_ev": 2.8349,
+    "sound_speed_kms": 80.0,
+    "transition_redshift_z": 1.0,
+    "target_ml_ratio": 0.50,
+    "performance_metrics": {
+        "sparc_confidence": 0.6287,
+        "s8_suppression": 0.07,
+        "predicted_s8": 0.7719
+    },
+    "hardware_context": "HP Z440 / Quadro M4000 8GB",
+    "protocol": "RADAR-DEV-INIT-03"
+}

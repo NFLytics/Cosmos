@@ -1,0 +1,13 @@
+{
+    "model_name": "Late-Time Superfluid Transition (LTST)",
+    "parameters": {
+        "z_c": 1.0,
+        "c_s": 80.0,
+        "m_ev": 2.8349753783740423
+    },
+    "predictions": {
+        "S8_suppression": "Optimal (0.96)",
+        "Dwarf_abundance": "Suppressed (0.14)",
+        "Rotation_curves": "Matches (via MOND limit)"
+    }
+}
